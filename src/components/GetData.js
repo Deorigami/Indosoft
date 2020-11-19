@@ -8,14 +8,25 @@ function GetData() {
   useEffect(() => {
     async function fetchData() {
       await fetch(`https://api.github.com/users`)
-        .then((res) => res.json())
+        .then((res) => {
+          if (res.ok) {
+            return res.json();
+          } else throw Error(res.statusText);
+        })
         .then((data) => {
           let dummy = [];
           for (let i = 0; i < 5; i++) {
-            dummy.push(data[Math.round(Math.random() * data.length)]);
+            let random = Math.round(Math.random() * data.length);
+
+            dummy.push(data[random]);
+
             if (dummy.some((val, i) => dummy.indexOf(val) !== i)) {
+              data.splice(random, 1);
+
               dummy.pop();
-              console.log("dupes");
+
+              dummy.push(data[Math.round(Math.random() * data.length)]);
+              console.log("filtered");
             }
           }
           setUsers(dummy);
