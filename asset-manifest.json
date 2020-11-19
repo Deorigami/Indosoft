@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Indosoft/static/css/main.ee6fd99c.chunk.css",
+    "main.js": "/Indosoft/static/js/main.31882109.chunk.js",
+    "main.js.map": "/Indosoft/static/js/main.31882109.chunk.js.map",
+    "runtime-main.js": "/Indosoft/static/js/runtime-main.9d4592d5.js",
+    "runtime-main.js.map": "/Indosoft/static/js/runtime-main.9d4592d5.js.map",
+    "static/js/2.19685478.chunk.js": "/Indosoft/static/js/2.19685478.chunk.js",
+    "static/js/2.19685478.chunk.js.map": "/Indosoft/static/js/2.19685478.chunk.js.map",
+    "index.html": "/Indosoft/index.html",
+    "static/css/main.ee6fd99c.chunk.css.map": "/Indosoft/static/css/main.ee6fd99c.chunk.css.map",
+    "static/js/2.19685478.chunk.js.LICENSE.txt": "/Indosoft/static/js/2.19685478.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d4592d5.js",
+    "static/js/2.19685478.chunk.js",
+    "static/css/main.ee6fd99c.chunk.css",
+    "static/js/main.31882109.chunk.js"
+  ]
+}
